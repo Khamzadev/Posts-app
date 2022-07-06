@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+h1 {
+  font-size: 45px;
+  color: #000;
+  margin-bottom: 30px;
+}
+.container {
+  padding: 40px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1500px;
+}
+
+#postList {
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+}
+
+.post {
+  list-style-type: none;
+  border: 3px solid #eaeaea;
+  border-radius: 3px;
+  padding: 10px 20px;
+  text-align: left;
+  position: relative;
+}
+
+.post1 {
+  width: 300px;
+  margin: 300px auto 0;
+}
+
+.post > h2 {
+  grid-area: name;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #000;
+  margin-bottom: 10px;
+}
+
+.text {
+  border: none;
+  overflow: hidden;
+  width: 306px;
+  height: 222px;
+  font-size: 22px;
+  height: 100px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.desc {
+  text-transform: lowercase;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.back-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  color: #fff;
+  background: #000;
+  border: none;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.delete-post {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.edit-post {
+  position: absolute;
+  bottom: 15px;
+  right: 40px;
+  cursor: pointer;
+}
+
+#searchBar {
+  width: 100%;
+  height: 32px;
+  border-radius: 3px;
+  border: 2px solid #eaeaea;
+  padding: 21px;
+  font-size: 28px;
+}
+
+#searchWrapper {
+  position: relative;
+}
+
+#searchWrapper::after {
+  content: "🔍";
+  position: absolute;
+  top: 7px;
+  right: 15px;
+}
+
+#pagination {
+  width: 300px;
+  margin: 0 auto;
+}
+
+#pagesList {
+  display: flex;
+}
+
+#pageList button {
+  padding: 15px 15px;
+  background-color: #eaeaea;
+  margin: 0 7px;
+  border: none;
+  cursor: pointer;
+}
