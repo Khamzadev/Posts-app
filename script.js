@@ -1,6 +1,7 @@
 const postList = document.getElementById("postList");
 const pagesList = document.getElementById("pagesList");
 const searchBar = document.getElementById("searchBar");
+const NotFound = document.getElementById("empty");
 
 let hpPosts = [];
 let currentPage = 1;
@@ -12,7 +13,7 @@ searchBar.addEventListener("keyup", (e) => {
   if (searchString) {
     const filteredPosts = hpPosts.filter((post) => {
       return (
-        post.title.toLowerCase().includes(searchString) ||
+        post.title.toLowerCase().includes(searchString) &&
         post.body.toLowerCase().includes(searchString)
       );
     });
@@ -21,6 +22,7 @@ searchBar.addEventListener("keyup", (e) => {
     setPageAndArr(1);
   }
 });
+
 
 // Пагинация и устаноыка первой страницы
 const setPageAndArr = (pageNum) => {

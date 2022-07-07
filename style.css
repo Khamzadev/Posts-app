@@ -2,6 +2,8 @@
 
 body {
   font-family: "Ubuntu", sans-serif;
+  background-color: #222627;
+  color: #fff;
 }
 
 * {
@@ -13,7 +15,6 @@ ul {
 }
 h1 {
   font-size: 45px;
-  color: #000;
   margin-bottom: 30px;
 }
 .container {
@@ -37,6 +38,8 @@ h1 {
   padding: 10px 20px;
   text-align: left;
   position: relative;
+  background-color: #eaeaea;
+  color: #000;
 }
 
 .post1 {
@@ -45,7 +48,7 @@ h1 {
 }
 
 .post > h2 {
-  grid-area: name;
+  height: 110px;
   margin-bottom: 0px;
   text-transform: uppercase;
   border-bottom: 2px solid #000;
